@@ -1,0 +1,79 @@
+@use "../../styles/breakpoints" as *;
+@use "../../styles/colors" as color;
+
+.login-section {
+  background-color: color.$gray-50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+
+  height: 90vh;
+
+  gap: 2rem;
+
+  > h2 {
+    font-size: 2rem;
+    color: color.$purple-900;
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+
+  > svg {
+    position: relative;
+    font-size: 1.2rem;
+    top: 1.7rem;
+  }
+
+  > input {
+    padding: 0.7rem 2rem;
+    background-color: transparent;
+    border-bottom: 1px solid;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  gap: 1rem;
+
+  width: 60%;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+
+  > button {
+    background-color: color.$purple-900;
+    border-radius: 0.3rem;
+    width: 10rem;
+    height: 2.5rem;
+    color: color.$purple-50;
+    &:hover {
+      background-color: color.$gray-900;
+    }
+  }
+
+  > p {
+    text-decoration: underline;
+    &:hover {
+      color: color.$purple-900;
+      cursor: pointer;
+    }
+  }
+}

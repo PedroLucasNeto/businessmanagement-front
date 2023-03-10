@@ -1,0 +1,36 @@
+@use "../../styles/breakpoints" as *;
+@use "../../styles/colors" as color;
+
+.header-container {
+  background-color: color.$gray-50;
+
+  border-bottom: 1px solid color.$purple-900;
+
+  width: 100%;
+  min-height: 3rem;
+
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 100px;
+  height: 100px;
+  background: url("/assets/images/rosto.png");
+}
+
+.header-ul {
+  display: flex;
+
+  gap: 1rem;
+
+  > li {
+    text-decoration: none;
+    > a {
+      color: color.$purple-900;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@use "./styles/colors" as color;
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #242424;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(color.$purple-900, 1);
+  border-radius: 1px;
+}
+
+:root {
+  --swiper-theme-color: #ab72ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: color.$gray-50;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+mark {
+  color: color.$purple-50;
+  background: linear-gradient(
+    -180deg,
+    transparent,
+    rgba(color.$purple-500, 0.3)
+  );
+
+  border-radius: 0.1em;
+  padding: 0rem 0.25rem;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  color: inherit;
+  font: inherit;
+
+  line-height: normal;
+
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  cursor: pointer;
+}
