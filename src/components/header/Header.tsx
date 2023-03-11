@@ -4,9 +4,7 @@ import "./Header.scss";
 const Header = () => {
   return (
     <div className="header-container">
-      <div className="header-logo">
-        <NavLink to="/" end></NavLink>
-      </div>
+      <div className="header-logo"></div>
       <ul className="header-ul">
         <li>
           <NavLink to="/login" end>

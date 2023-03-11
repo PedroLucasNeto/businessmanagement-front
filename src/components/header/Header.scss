@@ -7,9 +7,9 @@
   border-bottom: 1px solid color.$purple-900;
 
   width: 100%;
-  min-height: 3rem;
+  // min-height: 3rem;
 
-  padding: 2rem;
+  padding: 0rem 1rem;
 
   display: flex;
   justify-content: space-between;
@@ -17,9 +17,10 @@
 }
 
 .header-logo {
-  width: 100px;
-  height: 100px;
-  background: url("/assets/images/rosto.png");
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-image: url("/assets/logo.png");
 }
 
 .header-ul {
