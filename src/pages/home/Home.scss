@@ -1,2 +1,10 @@
 @use "../../styles/breakpoints" as *;
 @use "../../styles/colors" as color;
+
+.black {
+  background-color: black;
+}
+
+.test {
+  background-color: white;
+}

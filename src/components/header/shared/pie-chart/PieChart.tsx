@@ -2,16 +2,16 @@ import React from "react";
 import { Chart } from "react-google-charts";
 
 export const data = [
-  ["Task", "Hours per Day"],
-  ["Work", 11],
-  ["Eat", 2],
-  ["Commute", 2],
-  ["Watch TV", 2],
-  ["Sleep", 7],
+  ["Appointments", "Quantity"],
+  ["Feminino", 11],
+  ["Moda", 5],
+  ["Grávida", 3],
+  ["Evento", 1],
+  ["F", 7],
 ];
 
 export const options = {
-  title: "My Daily Activities",
+  title: "Quantidade de Ensaios",
   is3D: true,
 };
 
